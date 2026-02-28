@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+
+server:
+  port: 0
+
+logging:
+  level:
+    root: WARN
+    com.mipt.mvpmts2: WARN
+
+app:
+  name: MVP MTS test
+  version: 1.0.0-test
+  environment: test
+  debug-mode: false

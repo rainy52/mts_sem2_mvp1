@@ -1,0 +1,22 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: DEBUG
+    com.mipt.mvpmts2: DEBUG
+    org.springframework: INFO
+    org.springframework.web: DEBUG
+  
+  spring:
+    web:
+      debug: true
+
+app:
+  environment: development
+  debug-mode: true

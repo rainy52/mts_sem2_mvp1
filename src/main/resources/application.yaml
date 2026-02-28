@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: task-manager-mvp
+
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+app:
+  name: MVP MTS
+  version: 1.0.0
+
+logging:
+  level:
+    root: INFO
+    com.mipt.mvpmts2: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/task-manager.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 7
